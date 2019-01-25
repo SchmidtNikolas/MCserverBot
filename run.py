@@ -3,7 +3,9 @@ import discord, requests, random, json
 
 
 with open('config.json') as f:
-    TOKEN = json.load(f)['token']
+    data = json.load(f)
+    TOKEN = data.get('token', None)
+    IP = data.get('ipaddr', None)
 
 client = discord.Client()
 
@@ -14,7 +16,7 @@ async def on_message(message):
         return
 
     if message.content.lower().startswith('!ip'):
-        ipaddr = requests.get("https://ipinfo.io/ip").text
+        ipaddr = requests.get("https://ipinfo.io/ip").text if not IP else IP
         flavor_text = random.choice(["Happy Crafting!",
                                     "Don't let any creepers get too close!",
                                     "There's gold in them hills!",
