@@ -28,7 +28,7 @@ The Enigmatica 2 Modpack is available through the Technic and Twitch launchers.
 - Go to **Mods**.
 - Go to **Browse All Modpacks**
 - Search for "*Enigmatica 2*"
-- Install Enigmatica 2 version 1.5.7 (It should state that it's compatible with Minecraft 1.12.2)
+- Install the latest version of Enigmatica 2
 - Try to run Engmatica 2 on singleplayer.
   - It might take some time to start up; it's loading 200+ mods at once. Give it a little time. Especially if you're machine is doing other things at the same time.
   - If it crashes while starting up or running, make sure you've allocated enough RAM to run the whole thing. To do this, through Twich, On the Engimatica 2 page:
